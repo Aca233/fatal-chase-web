@@ -1,0 +1,7 @@
+{
+  "player": {
+    "moveSpeed": 245,
+    "rollSeconds": 0.5,
+    "rollCooldown": 3.5
+  }
+}

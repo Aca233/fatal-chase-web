@@ -1,0 +1,23 @@
+{
+  "name": "fatal-chase-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n client,server -c red,white \"npm run dev --workspace @fatal-chase/client\" \"npm run dev --workspace @fatal-chase/server\"",
+    "dev:client": "npm run dev --workspace @fatal-chase/client",
+    "dev:server": "npm run dev --workspace @fatal-chase/server",
+    "build": "npm run build --workspaces",
+    "test": "vitest run",
+    "lint": "tsc -b --pretty false"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  }
+}

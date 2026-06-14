@@ -1,0 +1,6 @@
+{
+  "oneArmChargeMultiplier": 0.65,
+  "oneLegMoveMultiplier": 0.6,
+  "bothLegsCrawlMultiplier": 0.25,
+  "bothLegsCanRoll": false
+}
